@@ -3,15 +3,13 @@ import React from "react";
 import styled from "styled-components";
 
 import Demo from "./Icons/Demo";
-import Logo3 from "../assets/img/logo3.jpeg";
+import Logo from "../assets/img/logo.jpeg";
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col'
-import ScrollAnimation from "react-animate-on-scroll";
 
 
 
 const Section = styled.section`
-  margin-top: 125px;
   padding: 30px 0 225px;
 `;
 const SectionTitle = styled.h2`
@@ -76,7 +74,7 @@ const BoxTitle = styled.h4`
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
-  color: darkgoldenrod;
+  color: #5273c7;
 `;
 
 const Text = styled.p`
@@ -101,31 +99,17 @@ const About = () => {
               {/* <IconWrap> */}
               {/* <Demo /> */}
               <Col xs={6} md={4}>
-                <ScrollAnimation className="imageDiv" animateIn='fadeIn'
-                  animateOut='fadeIn' duration={2}
-                  animateOnce={true}
-                >
-                  <Image src={Logo3} height="171" width="180" />
-                </ScrollAnimation>
+                <Image src={Logo} roundedCircle height="171" width="180" />
               </Col>
               {/* </IconWrap> */}
-              <ScrollAnimation className="imageDiv" animateIn='bounceInLeft'
-                animateOut='bounceOutRight' duration={2}
-                animateOnce={true}
-              >
-                <BoxTitle>UNIQUE COMPANY</BoxTitle>
-              </ScrollAnimation>
-              <br />
-              <ScrollAnimation className="imageDiv" animateIn='slideInRight'
-                animateOut='slideInRight' duration={1}
-                animateOnce={true}>
-                <Text>
-                  Unique is a IT Service company having hands on experience providing different IT solution around the globe.
-                  Unique is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.
-                  We offer Unique idea for Web Application, Mobile Application, Graphic Designing with Unique design and business software solutions such as CRM, HRM, Accounting solutions. We help you boost your business through our ready and customized software solutions.
-                  We work with total commitment to customer satisfaction and to delivering your project on time and on budget.
+              <BoxTitle>UNIQUE COMPANY</BoxTitle>
+              <br/>
+              <Text>
+                Unique is a IT Service company having hands on experience providing different IT solution around the globe.
+  Unique is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.
+  We offer Unique idea for Web Application, Mobile Application, Graphic Designing with Unique design and business software solutions such as CRM, HRM, Accounting solutions. We help you boost your business through our ready and customized software solutions.
+  We work with total commitment to customer satisfaction and to delivering your project on time and on budget.
               </Text>
-              </ScrollAnimation>
             </Box>
           </div>
           {/* <div className="col-lg-4">

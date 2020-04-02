@@ -5,8 +5,6 @@ import styled from "styled-components";
 import bgImg from "../assets/img/bg-home.jpg";
 import downArrow from '../assets/downArrow.png';
 import { Link, animateScroll as scroll } from "react-scroll";
-import { Carousel } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Section = styled.section`
@@ -15,7 +13,6 @@ const Section = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   &:after,
   &:before {
     content: "";
@@ -39,10 +36,10 @@ const Section = styled.section`
   }
 
   @media (min-width: 992px) {
-    // padding-left: 110px;
-    // padding-right: 110px;
-    // padding-top: 279px;
-    // padding-bottom: 111px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 279px;
+    padding-bottom: 111px;
   }
 
   .container {
@@ -65,7 +62,6 @@ const BgOverlay = styled.div`
   left: 0;
   top: 0;
   background-color: rgba(0,0,0,0.5);
-  z-index: 1;
 
   @media (min-width: 992px) {
     background-image: linear-gradient(62deg, #2b2b2b00, #623bff2e);
@@ -106,63 +102,9 @@ const SubTitle = styled.h5`
 `;
 
 const Home = () => {
-
-  function secondSlide() {
-    document.getElementsByClassName("home1")[0].style.transition = "0.5s"
-    document.getElementsByClassName("home1")[0].style.opacity = "0"
-    setTimeout(() => {
-      document.getElementsByClassName("home1")[0].style.display = "none"
-      document.getElementsByClassName("home2")[0].style.display = "block"
-      document.getElementsByClassName("home2")[0].style.transition = "0.5s"
-    }, 500)
-    setTimeout(() => {
-    }, 500)
-    setTimeout(() => {
-      document.getElementsByClassName("home2")[0].style.opacity = "1"
-    }, 1000)
-
-  }
-
   return (
     <>
-      {/* <Section id="home" className="home1" style={{ backgroundImage: `url(${bgImg}`, opacity: 1 }}>
-        <BgOverlay />
-        <div className="container homeDiv">
-          <HomeTitle data-aos="zoom-in">
-            It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout.
-        </HomeTitle>
-          <SubTitle
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-delay="400"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-        </SubTitle>
-          <Link
-            href="#"
-            className="nav-link"
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={400}
-          >
-
-            <img className="downArrow" src={downArrow} />
-          </Link>
-          <div className="left">
-            <img className="leftArrow" src={downArrow} />
-          </div>
-
-          <div className="right">
-            <img onClick={secondSlide} className="rightArrow" src={downArrow} />
-          </div>
-        </div>
-      </Section>
-      <Section id="home" className="home2" style={{ backgroundImage: `url(${bgImg})`, opacity: 1, display: "block", position: "absolute", top: 0, left: "1 00%" }}>
+      <Section id="home" style={{ backgroundImage: `url(${bgImg}`, opacity: 1 }}>
         <BgOverlay />
         <div className="container homeDiv">
           <HomeTitle data-aos="zoom-in">
@@ -198,68 +140,43 @@ const Home = () => {
             <img className="rightArrow" src={downArrow} />
           </div>
         </div>
-      </Section> */}
-      <Section id="home" className="home1">
+      </Section>
+      <Section id="home" style={{ backgroundImage: `url(${bgImg})`, opacity: 0, display: "none" }}>
         <BgOverlay />
-        <Link
-          href="#"
-          className="nav-link"
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={400}
-        >
-          <img className="downArrow" src={downArrow} />
-        </Link>
+        <div className="container homeDiv">
+          <HomeTitle data-aos="zoom-in">
+            It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout.
+        </HomeTitle>
+          <SubTitle
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-delay="400"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+        </SubTitle>
+          <Link
+            href="#"
+            className="nav-link"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={400}
+          >
 
-        <Carousel style={{ height: "100%" }}>
-          <Carousel.Item style={{ height: "100%" }}>
-            <img
-              className="d-block w-100"
-              src={bgImg}
-              alt="First slide"
-              style={{ height: "100%" }}
-            />
-            <Carousel.Caption>
-              <h3>It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout.</h3>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item style={{ height: "100%" }}>
-            <img
-              className="d-block w-100"
-              src={bgImg}
-              alt="Third slide"
-              style={{ height: "100%" }}
-            />
+            <img className="downArrow" src={downArrow} />
+          </Link>
+          <div className="left">
+            <img className="leftArrow" src={downArrow} />
+          </div>
 
-            <Carousel.Caption>
-              <h3>It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout.</h3>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item style={{ height: "100%" }}>
-            <img
-              className="d-block w-100"
-              src={bgImg}
-              alt="Third slide"
-              style={{ height: "100%" }}
-            />
-
-            <Carousel.Caption>
-              <h3>It is a long established fact that a reader will be distracted by the
-            readable content of a page when looking at its layout.</h3>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+          <div className="right">
+            <img className="rightArrow" src={downArrow} />
+          </div>
+        </div>
       </Section>
     </>
   );

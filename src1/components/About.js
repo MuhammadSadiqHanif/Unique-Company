@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Demo from "./Icons/Demo";
-import Logo3 from "../assets/img/logo3.jpeg";
+import Logo from "../assets/img/logo.jpeg";
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col'
 import ScrollAnimation from "react-animate-on-scroll";
@@ -76,7 +76,7 @@ const BoxTitle = styled.h4`
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
-  color: darkgoldenrod;
+  color: #5273c7;
 `;
 
 const Text = styled.p`
@@ -105,7 +105,7 @@ const About = () => {
                   animateOut='fadeIn' duration={2}
                   animateOnce={true}
                 >
-                  <Image src={Logo3} height="171" width="180" />
+                  <Image src={Logo} height="171" width="180" />
                 </ScrollAnimation>
               </Col>
               {/* </IconWrap> */}

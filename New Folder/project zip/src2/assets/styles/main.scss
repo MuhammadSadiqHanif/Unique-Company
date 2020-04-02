@@ -26,10 +26,9 @@ section {
         overflow: hidden;
           +section{
             background-color: white;
-            padding-top: 100px;
             .container{
               height: 100%;
-              // padding-top: 70px;
+              padding-top: 70px;
               h1{
                 color: #333333;
                 font-size: 38px;
@@ -69,8 +68,8 @@ section {
                   justify-content: center;
                   @media only screen and (max-width: 800px) {
                     width: 100%;
-                    height: 100px;
-                    margin-bottom: 40px;
+                    height: 200px;
+                    margin-bottom: 50px;
                   }
                   img{
                     height: 60%;
@@ -212,13 +211,11 @@ section {
 }
 .servicesMain{
   padding: 0;
-  background-color: #292929;
-  padding-top: 50px;
+  background-color: #f2f3f5;
   .container{
     height: 100%;
     color: #333333;
     h1{
-      color: white;
       font-size: 38px;
       font-weight: bold;
       line-height: 62px;
@@ -242,7 +239,6 @@ section {
       height: auto;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: space-evenly;
       @media only screen and (max-width: 800px) {
         flex-direction: column;
@@ -255,7 +251,6 @@ section {
         min-height: 1px;
         padding-right: 15px;
         padding-left: 15px;
-        height: auto;
         @media only screen and (max-width: 800px) {
           max-width: 100%;
         }
@@ -270,14 +265,9 @@ section {
           overflow: hidden;
           @media only screen and (max-width: 800px) {
             width: 100%;
-            height: 140px;
-            overflow: hidden;
-            text-align: center;
-            &:hover{
-              height: 270px;
-            }
+            height: auto;
           }
-          height: 270px;
+          height: 290px;
           &:hover{
             color: #ffffff;
             p{
@@ -304,17 +294,12 @@ section {
             height: 50px;
             position: relative;
             z-index: 1;
-            @media only screen and (max-width: 800px) {
-              height: 50px;
-              margin: 0;
-            }
           }
           h1{
-            font-size: 21px;
+            font-size: 25px;
             font-weight: 600;
             position: relative;
             z-index: 1;
-            color: black;
           }
           p{
             font-size: 16px;
@@ -346,8 +331,6 @@ section {
 .projectMain{
   padding: 0;
   background-color: #f2f3f5;
-  padding-top: 50px;
-  height: auto;
   .container{
     height: 100%;
     color: #333333;
@@ -406,16 +389,9 @@ section {
         margin-top: 50px;
         width: 350px;
         height: 350px;
-        transition: all 0.3s ease-in-out 0s;
-
         @media only screen and (max-width: 800px) {
+          height: 320px;
           width: 100%;
-          height: 140px;
-          overflow: hidden;
-          text-align: center;
-          &:hover{
-            height: 270px;
-          }
         }
         position: relative;
         overflow: hidden;
@@ -467,125 +443,4 @@ section {
       }
     }
   }
-}
-#home{
-  &:hover{
-    .homeDiv{
-      .left{
-        .leftArrow{
-          opacity: 1;
-        }
-      }
-      .right{
-        .rightArrow{
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-.downArrow{
-  height: 30px;
-  z-index: 9;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  animation-name: example;
-  animation: example 0.9s infinite;
-}
-.homeDiv{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  .downArrow{
-    height: 30px;
-    z-index: 9;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-    animation-name: example;
-    animation: example 0.9s infinite;
-  }
-  .left{
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-0%, -50%);
-    .leftArrow{
-      height: 20px;
-      z-index: 9;
-      transform: rotate(90deg);
-      opacity: 0;
-      transition: 0.5s;
-    }
-  }
-  .right{
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(-0%, -50%);
-    .rightArrow{
-      height: 20px;
-      z-index: 9;
-      transform: rotate(-90deg);
-      opacity: 0;
-      transition: 0.5s;
-    }
-  }
-  @keyframes example {
-    0%   {margin-top:0px;}
-    50%  {margin-top:10px;}
-    100% {margin-top:0px;}
-  }
-}
-.carousel-inner{
-  height: 100%;
-}
-#about{
-  .container{
-    .row{
-      .col-lg-12{
-          .col-6{
-            max-width: 100%;
-        }
-        h4{
-          margin-top: 20px;
-        }
-      }
-    }
-  }
-}
-.carousel-indicators{
-  display: none;
-}
-.carousel-caption {
-  position: absolute;
-  /* right: 15%; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* bottom: 20px; */
-  /* left: 15%; */
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  @media only screen and (max-width: 800px) {
-    width: 90%;
-  }
-  z-index: 1;
-}
-#about{
-  // margin-top: 30px;
-  // padding-top: 50px;
 }

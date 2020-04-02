@@ -4,8 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Logo3 from "../assets/img/logo3.jpeg";
-
+import Logo from "../assets/img/logo.jpeg";
 import styled from "styled-components";
 
 
@@ -33,12 +32,6 @@ const Header = () => {
               onClick={scrollTo("home")}
               aria-label="Logo"
             >
-
-              <img src={Logo3} height="40px" width="40px"
-                style={{
-                  position: "relative",
-                  top: "-8px"
-                }} />
               <span style={{
                 fontSize: "37px",
                 fontFamily: "auto",
@@ -79,7 +72,7 @@ const Header = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-100}
                 duration={400}
               >
                 About
@@ -103,7 +96,7 @@ const Header = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={50}
                 duration={400}
               >
                 Projects
