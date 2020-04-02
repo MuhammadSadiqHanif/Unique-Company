@@ -104,80 +104,80 @@ const SubTitle = styled.h5`
 const Home = () => {
   return (
     <>
-    <Section id="home" style={{backgroundImage: `url(${bgImg}`, opacity: 1}}>
-      <BgOverlay />
-      <div className="container homeDiv">
-        <HomeTitle data-aos="zoom-in">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+      <Section id="home" style={{ backgroundImage: `url(${bgImg}`, opacity: 1 }}>
+        <BgOverlay />
+        <div className="container homeDiv">
+          <HomeTitle data-aos="zoom-in">
+            It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout.
         </HomeTitle>
-        <SubTitle
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-delay="400"
-        >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          <SubTitle
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-delay="400"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
         </SubTitle>
-        <Link
-          href="#"
-          className="nav-link"
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={400}
-        >
+          <Link
+            href="#"
+            className="nav-link"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={400}
+          >
 
-          <img className="downArrow" src={downArrow} />
-        </Link>
-        <div className="left">
-          <img className="leftArrow" src={downArrow} />
-        </div>
+            <img className="downArrow" src={downArrow} />
+          </Link>
+          <div className="left">
+            <img className="leftArrow" src={downArrow} />
+          </div>
 
-        <div className="right">
-          <img className="rightArrow" src={downArrow} />
+          <div className="right">
+            <img className="rightArrow" src={downArrow} />
+          </div>
         </div>
-      </div>
-    </Section>
-    <Section id="home" style={{backgroundImage: `url(${bgImg})`, opacity: 0, display: "none"}}>
-      <BgOverlay />
-      <div className="container homeDiv">
-        <HomeTitle data-aos="zoom-in">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+      </Section>
+      <Section id="home" style={{ backgroundImage: `url(${bgImg})`, opacity: 0, display: "none" }}>
+        <BgOverlay />
+        <div className="container homeDiv">
+          <HomeTitle data-aos="zoom-in">
+            It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout.
         </HomeTitle>
-        <SubTitle
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-delay="400"
-        >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          <SubTitle
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-delay="400"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
         </SubTitle>
-        <Link
-          href="#"
-          className="nav-link"
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={400}
-        >
+          <Link
+            href="#"
+            className="nav-link"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={400}
+          >
 
-          <img className="downArrow" src={downArrow} />
-        </Link>
-        <div className="left">
-          <img className="leftArrow" src={downArrow} />
-        </div>
+            <img className="downArrow" src={downArrow} />
+          </Link>
+          <div className="left">
+            <img className="leftArrow" src={downArrow} />
+          </div>
 
-        <div className="right">
-          <img className="rightArrow" src={downArrow} />
+          <div className="right">
+            <img className="rightArrow" src={downArrow} />
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
     </>
   );
 };

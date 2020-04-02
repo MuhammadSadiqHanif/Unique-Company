@@ -11,6 +11,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 
 const Section = styled.section`
+  margin-top: 125px;
   padding: 30px 0 225px;
 `;
 const SectionTitle = styled.h2`
@@ -114,10 +115,10 @@ const About = () => {
               >
                 <BoxTitle>UNIQUE COMPANY</BoxTitle>
               </ScrollAnimation>
-                <br />
+              <br />
               <ScrollAnimation className="imageDiv" animateIn='slideInRight'
-                  animateOut='slideInRight' duration={1}
-                  animateOnce={true}>
+                animateOut='slideInRight' duration={1}
+                animateOnce={true}>
                 <Text>
                   Unique is a IT Service company having hands on experience providing different IT solution around the globe.
                   Unique is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.

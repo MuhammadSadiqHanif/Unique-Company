@@ -7,6 +7,11 @@ import styled from "styled-components";
 import messageBox from '../assets/img/letter.svg'
 import ScrollAnimation from 'react-animate-on-scroll';
 
+const Section = styled.section`
+
+margin-top:50px
+
+`;
 const SectionTitle = styled.h2`
   font-size: 26px;
   font-weight: 300;
@@ -24,18 +29,18 @@ const SubTitle = styled.h5`
   color: #aeaeae;
   margin-bottom: 25px;
   @media (min-width: 992px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 `;
 
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <Section id="contact">
       <div className="container">
-        {/* <SectionTitle>Contact Us</SectionTitle> */}
-        {/* <SubTitle>What we Do?</SubTitle> */}
-        <h1>Have Some Question ?</h1>
+        <SectionTitle>Contact Us</SectionTitle>
+        <SubTitle>Have Some Question ?</SubTitle>
+        {/* <h1>Have Some Question ?</h1> */}
         <ScrollAnimation animateIn='fadeIn'
           animateOut='fadeIn' duration={2}
           animateOnce={true}
@@ -68,7 +73,7 @@ const Contact = () => {
           </div>
         </ScrollAnimation>
       </div>
-    </section>);
+    </Section>);
 };
 
 export default Contact;

@@ -268,13 +268,13 @@ const Projects = () => {
           animateOnce={true}
           style={{ display: "flex", justifyContent: "space-between", width: "100%", flexWrap: "wrap" }}
         >
-        <div className="projectDiv" style={{ backgroundImage: `url(${seven})` }}>
-          <div className="imageOverlay">
-            <button>
-              <img style={{ height: "80%" }} src={galleryicon} />
-            </button>
+          <div className="projectDiv" style={{ backgroundImage: `url(${seven})` }}>
+            <div className="imageOverlay">
+              <button>
+                <img style={{ height: "80%" }} src={galleryicon} />
+              </button>
+            </div>
           </div>
-        </div>
         </ScrollAnimation>
       </div>
     </div>

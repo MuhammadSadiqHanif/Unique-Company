@@ -72,7 +72,7 @@ const Header = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-100}
                 duration={400}
               >
                 About
@@ -96,7 +96,7 @@ const Header = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={50}
                 duration={400}
               >
                 Projects
@@ -108,7 +108,7 @@ const Header = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={0}
                 duration={400}
               >
                 Contact
